@@ -1,0 +1,40 @@
+.dice {
+    width: 60px;
+    height: 60px;
+    background: #ffeb3b;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    display: none;
+  }
+  
+  .dot.show {
+    display: block;
+  }
+  
+  .animate-roll {
+    animation: roll 1s ease-in-out;
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
