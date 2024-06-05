@@ -1,6 +1,4 @@
-Sure, here's a simplified version of the `README.md`:
 
-```markdown
 # 7 UP 7 DOWN Game
 
 A fun and interactive dice betting game where players can bet on the sum of two dice.
